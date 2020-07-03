@@ -25,7 +25,7 @@
                                 {{ __('E-Mail Address') }}:
                             </label>
 
-                            <input id="email" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <input id="email" type="email" class="form-input w-full @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
                                 <p class="text-red-500 text-xs italic mt-4">
@@ -39,7 +39,7 @@
                                 {{ __('Send Password Reset Link') }}
                             </button>
 
-                            <p class="w-full text-xs text-center text-grey-dark mt-8 -mb-4">
+                            <p class="w-full text-xs text-center text-gray-700 mt-8 -mb-4">
                                 <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">
                                     {{ __('Back to login') }}
                                 </a>
